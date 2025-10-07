@@ -16,6 +16,7 @@ public class Craps {
             System.out.println("du tabte på dit come out roll :(");
         } else {
             System.out.println("dit come out roll er " + comeOutRoll);
+            // == true er unødvendigt.
             if (rollforPoint(comeOutRoll) == true) {
                 System.out.println("du kastede dit come out roll, du vandt! :)");
 

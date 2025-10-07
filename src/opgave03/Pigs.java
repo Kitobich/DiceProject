@@ -58,6 +58,10 @@ public class Pigs {
     public static void spillerTur() {
         int spiller = 1;
         while (spiller1Point < pointMax && spiller2Point < pointMax) {
+            //Der er ret meget duplikeret kode i if og else blokken, hvis bare der var en måde hvorpå man kunne bruger spiller variablen
+            //til at fjerne det duplikerede kode.
+            //Hint: initialiser spiller = 0;
+            System.out.println("Spiller " + (spiller + 1) + "'s tur" );
             if (spiller % 2 == 1) {
                 System.out.println("spiller 1´s tur");
                 int point = playPig(1);
@@ -87,6 +91,8 @@ public class Pigs {
     }
 
     public static void updaterePoint(int spiller, int point) {
+        //Hvis I have spillerPoint i et array, kunne I opdaterer med spillerPoint[spiller] += point
+        //og så er I ikke langt fra at kunne generaliserer til et vilkårligt antal spiller.
         if (spiller == 1) {
             spiller1Point += point;
 
